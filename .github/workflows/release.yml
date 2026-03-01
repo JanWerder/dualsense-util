@@ -21,7 +21,7 @@ jobs:
         run: uv sync
 
       - name: Build exe
-        run: uv run pyinstaller --onefile --noconsole --name dualsense-util src/dualsense_util/main.py
+        run: uv run pyinstaller --onefile --noconsole --name dualsense-util app.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
