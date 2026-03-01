@@ -1,0 +1,19 @@
+[project]
+name = "dualsense-util"
+version = "0.1.0"
+description = "DualSense Bluetooth Helper"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = ["pyinstaller>=6"]
+
+[project.scripts]
+dualsense-util = "dualsense_util.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dualsense_util"]
